@@ -1,0 +1,7 @@
+Molecules: Logp_and_synthesizability,Generate,CCOC1=NC=NC(=C1C)NCCOC(C)C,3,Sample,1.2,20,True,0.3,"<logp>:0.390, <scs>:2.628",N,(C)C,CCO
+Molecules: Qed,Generate,CC(C#C)N(C)C(=O)NC1=CC=C(Cl)C=C1,10,Sample,1.0,30,True,0.5,<qed>:0.75,"N, C","C(=O), CC",C1=CC=C(Cl)C=C1
+Molecules: Logp_and_synthesizability,Predict,<logp>[MASK][MASK][MASK][MASK][MASK]|<scs>[MASK][MASK][MASK][MASK][MASK]|[C][C][O][C][=N][C][=N][C][Branch1_2][Branch1_1][=C][Ring1][Branch1_2][C][N][C][C][O][C][Branch1_1][C][C][C],1,Greedy,1.0,30,False,0.0,,,,
+Proteins: Stability,Predict,<stab>[MASK][MASK][MASK][MASK][MASK]|GSQEVNSGTQTYKNASPEEAERIARKAGATTWTEKGNKWEIRI,1,Greedy,1.0,1,False,0.0,,,,
+Proteins: Stability,Generate,GSQEVNSGTQTYKNASPEEAERIARKAGATTWTEKGNKWEIRI,10,Sample,1.2,30,True,0.3,<stab>:0.393,,SQEVNSGTQTYKN,WTEK
+Molecules: Qed,Generate,<qed>0.717|[MASK][MASK][MASK][MASK][MASK][C][Branch2_1][Ring1][Ring1][MASK][MASK][=C][C][Branch1_1][C][C][=N][C][MASK][MASK][=C][C][=C][Ring1][O][Ring1][Branch1_2][=C][Ring2][MASK][MASK],10,Sample,1.2,30,False,0.0,,,,
+Molecules: Solubility,Generate,ClC(Cl)C(Cl)Cl,5,Sample,1.3,40,True,0.4,<esol>:0.754,,,
